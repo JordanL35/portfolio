@@ -31,6 +31,7 @@
 .about-container,
 .stat-item,
 .skill-header,
+.skill-up,
 .project-card,
 .project-techs {
     display: flex;
@@ -63,13 +64,12 @@
 }
 
 .stat-item,
-.skill-header {
+.skill-up {
     justify-content: space-between;
 }
 
 /* Texte */
 .about-text,
-.skills-grid,
 .projects-grid,
 .timeline {
     text-align: left;

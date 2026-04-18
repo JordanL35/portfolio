@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/communs.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/mode-eco.css">
+    <title>Jordan Lequertier | Développeur Full Stack</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero" class="nav-logo">Jordan L.</a>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Ancres vers les sections -->
+            <ul id="nav-menu">                
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#timeline">Parcours</a></li>
+                <li class="eco-mobile-item">
+                    <button id="eco-toggle-mobile">Mode Éco : Désactivé</button>
+                </li>
+            </ul>
+            <button id="eco-toggle">Mode Éco : Désactivé</button>
+        </nav>        
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Jordan Lequertier</h1>
+            <h2>Développeur Full&nbsp;Stack <br> Recherche d'alternance</h2>
+            
+            <div class="btn-contact">
+                <a href="https://www.linkedin.com/in/jordan-lequertier" class="btn">LinkedIn</a>
+                <a href="tel:+33698571256" class="btn">Téléphone</a>
+                <a href="mailto:jordan.lequertier@orange.fr" class="btn">Email</a>
+                <a href="assets/CV_JordanLequertier.pdf" download class="btn">CV</a>
+            </div>
+        </section>
+
+        <!-- Mes motivations pour le dév -->
+        <section id="about">
+            <h2>À propos</h2>
+
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                    Le développement est pour moi, une évidence à ma reconversion et aujourd'hui j'ai un souhait, en découvrir toujours plus !
+                    Actuellement, en BTS SIO - SLAM, je rejoins une formation de Concepteur Développeur d'Applications (CDA) en <span class="highlight">alternance</span> dès septembre 2026. <br>
+                    Le rythme ? <span class="highlight">2 semaines entreprise / 1 semaine école</span>.<br>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="highlight">Trouver</span> des solutions, <span class="highlight">travailler</span> en équipe, <span class="highlight">répondre</span> à un besoin et <span class="highlight">m'adapter</span> à l'évolution technologique sont mes sources de motivations.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img 
+                        id="photo"
+                        src="assets/photo.webp"
+                        data-normal="assets/photo.webp"
+                        data-eco="assets/photo-contour.webp"
+                        alt="Jordan L."
+                    />
+                </div>
+            </div>
+        </section>
+    
+        <!-- Statistiques -->
+        <section id="stats">
+            <div class="stats-grid">
+
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <!-- <span class="stat-plus">+</span> -->
+                        <span class="stat-number" data-target="6">6</span>
+                    </div>
+                    <p class="stat-label">Technologies</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-number" data-target="100">100</span>
+                        <span class="stat-plus">%</span>
+                    </div>
+                    <p class="stat-label">Investi</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-symbol">∞</span>
+                    </div>
+                    <p class="stat-label">Soif d'apprendre</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-plus">+</span>
+                        <span class="stat-number" data-target="1000">1000</span>
+                    </div>
+                    <p class="stat-label">Cafés</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tableau des hard-skills -->
+        <section id="skills">
+            <h2>Mes compétences</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-level">Intermédiaire</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-level">Intermédiaire</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Débutant</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-level">Débutant</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">Débutant</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL / MySQL</span>
+                        <span class="skill-level">En progression</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mes projets -->
+        <section id="projects">
+            <h2>Mes derniers projets</h2>
+            <div class="projects-grid">
+                <!-- Projets réalisés et/ou en cours -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag en-cours">En cours</span>
+                    </div>
+
+                    <h3>Nonogramme</h3>
+                    <p>Jeu dont l'objectif est de trouver les cellules pleines.</p>
+                    
+                    <div class="project-techs">
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">PHP</span>
+                        <span class="tech">SQL</span>
+                        <span class="tech">Java</span>
+                    </div>
+
+                    <a href="https://github.com/tonprofil/tonrepo" class="btn" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag en-cours">En cours</span>
+                    </div>
+                    
+                    <h3>Gestionnaire de contact</h3>
+                    <p>Outil permettant le stockage, l'organisation et le suivi des informations concernant vos clients et vos leads.</p>
+                    
+                    <div class="project-techs">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    
+                    <a href="https://github.com/tonprofil/tonrepo" class="btn" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag en-cours">Terminé</span>
+                    </div>
+                    
+                    <h3>To-do List</h3>
+                    <p>Utilisation d'un outil pour ne rien oublier dans vos tâches du quotidien avec la possibilité de pouvoir supprimer.</p>
+                    
+                    <div class="project-techs">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    
+                    <a href="https://github.com/tonprofil/tonrepo" class="btn" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <!-- Carte GitHub -->
+                <div class="project-card github-card">
+                    <p>Retrouvez tous mes projets sur GitHub</p>
+                    <a href="https://github.com/JordanL35" class="btn" target="_blank">Voir mon GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mon parcours vers ce projet -->
+        <section id="timeline">
+            <h2>Mon parcours</h2>
+            <p class="section-subtitle">De la reconversion à la passion du développement.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Août 2020 - Janvier 2025</span>
+                        <h3>Moniteur auto-école</h3>
+                        <p>5 ans d'expérience dans la pédagogie et la transmission de compétences.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Février 2025 — Mai 2025</span>
+                        <h3>Pré-qualification numérique</h3>
+                        <p>Découverte des métiers du numérique - le développement s'impose comme une évidence.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <!-- active pour préciser où j'en suis actuellement dans ma timeline -->
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-card active">
+                        <span class="timeline-date">Août 2025 - Juin 2026</span>
+                        <h3>BTS SIO option SLAM</h3>
+                        <p>Greta de Saint-Malo - apprentissage des bases du développement web et logiciel.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Septembre 2026</span>
+                        <h3>Concepteur Développeur d'Applications</h3>
+                        <p>Formation en alternance - 2 semaines entreprise / 1 semaine école.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-name">Jordan Lequertier</p>
+            <p class="footer-subtitle">Développeur Full Stack - En recherche d'alternance</p>
+
+            <div class="btn-contact">
+                <a href="https://www.linkedin.com/in/jordan-lequertier" class="btn">LinkedIn</a>
+                <a href="tel:+33698571256" class="btn">Téléphone</a>
+                <a href="mailto:jordan.lequertier@orange.fr" class="btn">Email</a>
+                <a href="assets/CV_JordanLequertier.pdf" download class="btn">Mon CV</a>
+            </div>
+
+            <p class="footer-copy">Copyright © 2026 Jordan Lequertier</p>
+        </div>
+    </footer>
+
+    <!-- La partie JS -->
+    <script src="script.js"></script>
+</body>
+</html>

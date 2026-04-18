@@ -1,0 +1,92 @@
+/*
+ *
+ * MODE ÉCO
+ *
+ */
+
+/* Désactive toutes les transitions et animations */
+.eco *, .eco *::before, .eco *::after {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Masque le bouton éco (celui >768px) dans le header */
+#eco-toggle {
+    display: none;
+}
+
+#eco-toggle,
+#eco-toggle-mobile {
+    padding: var(--space-xs) var(--space-s);
+    font-size: var(--fs-sm);
+    text-align: center;
+    background: none;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#eco-toggle-mobile {
+    min-width: 110px;
+}
+
+/* Placement du bouton éco à droite dans le munu burger */
+.eco-mobile-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--space-s);
+}
+
+/* Supprime les fonds colorés */
+.eco .en-cours,
+.eco .tech,
+.eco .skill-card,
+.eco .project-card,
+.eco .timeline-card {
+    background-color: transparent;
+}
+
+/* Supprime les bordures colorés */
+.eco .skill-card,
+.eco .project-card,
+.eco .timeline-card {
+    border-color: transparent;
+}
+
+/* Supprime le box-shadow */
+.eco .timeline-dot.active {
+    box-shadow: none;
+}
+
+/*
+ *
+ * RESPONSIVE
+ *
+ */
+
+@media (min-width: 768px) {
+    
+    /* Bouton éco du mobile */
+    #eco-toggle-mobile {
+        display: none;
+    }
+
+    /* Bouton éco */
+    #eco-toggle {
+        display: block;
+        min-width: 130px;
+    }
+
+    .eco-mobile-item {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #eco-toggle:hover,
+    .eco #eco-toggle:hover {
+        background-color: var(--accent);
+        color: var(--bg);
+    }
+}

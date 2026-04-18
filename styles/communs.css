@@ -24,8 +24,6 @@
     --space-fluid-l: clamp(3rem, 8vw, 6rem); */
 
 
-
-
     /* Espacements fixes */
     --space-xs: 0.5rem;
     --space-s: 1rem;
@@ -37,7 +35,7 @@
     --transition: 0.3s ease;
 }
 
-/* Sélection de tous les éléments HTML (Reset CSS) */
+/* Sélection de tous les éléments HTML */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;

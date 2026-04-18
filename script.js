@@ -1,8 +1,4 @@
-//
-//
 // MENU HAMBURGER
-//
-//
 
 // On récupère le bouton hamburger
 const menuToggle = document.getElementById('menu-toggle');
@@ -25,12 +21,7 @@ navMenu.querySelectorAll('a').forEach(link => {
     });
 });
 
-
-//
-//
 // MODE ÉCO
-//
-//
 
 // Bouton (>= 768px)
 const ecoToggle = document.getElementById('eco-toggle');
@@ -88,12 +79,7 @@ function toggleEcoMode() {
 ecoToggle.addEventListener('click', toggleEcoMode);
 ecoToggleMobile.addEventListener('click', toggleEcoMode);
 
-//
-//
 // Gestion des images
-//
-//
-
 function updateEcoImages() {
     const images = document.querySelectorAll('#photo');
 
@@ -103,11 +89,7 @@ function updateEcoImages() {
     });
 }
 
-//
-//
 // ANIMATION STATS (UNIQUEMENT SI PAS ÉCO)
-//
-//
 
 function initStatsAnimation() {
 
@@ -153,11 +135,7 @@ function initStatsAnimation() {
     observer.observe(statsSection);
 }
 
-//
-//
 // INITIALISATION
-//
-//
 
 // Lance l’animation uniquement si pas en mode éco
 if (!document.documentElement.classList.contains('eco')) {

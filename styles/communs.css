@@ -1,0 +1,287 @@
+:root {
+    /* Couleurs */
+    --bg: #1D3C45;
+    --bg-card: #2a4d59;
+    --text: #f1ce94;
+    --text-muted: #f1d7ab;
+    --accent: #e97a47;
+
+    /* Typographie */
+    --font: system-ui, -apple-system, sans-serif;
+    --fs-sm: 0.9rem; /* Typo spécifique à certains endroits */
+    --fs-base: 1rem;
+    --fs-lg: 1.2rem;
+    --fs-xl: clamp(1.5rem, 3vw, 2rem);
+    --fs-xxl: clamp(2rem, 5vw, 3rem);
+
+    /* Espacements */
+    /* --space-xs: 0.5rem;
+    --space-s: 1rem;
+    --space-m: 2rem;
+    --space-l: 4rem;
+    --space-fluid-s: clamp(1rem, 3vw, 2rem);
+    --space-fluid-m: clamp(2rem, 5vw, 4rem);
+    --space-fluid-l: clamp(3rem, 8vw, 6rem); */
+
+
+
+
+    /* Espacements fixes */
+    --space-xs: 0.5rem;
+    --space-s: 1rem;
+    /* Espacements fluides */
+    --space-m: clamp(1.5rem, 4vw, 3rem); /* Composants */
+    --space-l: clamp(2.5rem, 6vw, 5rem); /* Sections */
+
+    /* Transitions */
+    --transition: 0.3s ease;
+}
+
+/* Sélection de tous les éléments HTML (Reset CSS) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Initialisation des couleurs et de la typographie */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+}
+
+/* Mobile par défaut */
+section {
+    padding: var(--space-l);
+    scroll-margin-top: 60px;
+    text-align: center;
+}
+
+/* Typo */
+h1 {
+    font-size: var(--fs-xxl);
+}
+
+h2 {
+    font-size: var(--fs-xl);
+}
+
+h3 {
+    font-size: var(--fs-lg);
+}
+
+p {
+    font-size: var(--fs-base);
+}
+
+/*
+ *
+ * HEADER
+ *
+ */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--accent);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-s) var(--space-m);
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--bg);
+}
+
+/* Prénom.Nom */
+.nav-logo {
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Menu Navigation */
+#nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    flex-direction: column;
+    padding: var(--space-s);
+    border-bottom: 1px solid var(--accent);
+    gap: var(--space-s);
+}
+
+#nav-menu.open {
+    display: flex;
+}
+
+/* Liste des liens */
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+nav ul a:hover {
+    color: var(--accent);
+}
+
+/* Menu Hamburger */
+#menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* Les barres pour le "logo" du menu hamburger */
+#menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 2px;
+}
+
+/* Animation hamburger (croix) */
+#menu-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/*
+ *
+ * Tous les boutons
+ *
+ */
+
+/* Groupe des boutons (inclus les boutons dans le hero , la section projet et les boutons du footer) */
+.btn {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-m);
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    transition: all var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+/* Groupe des boutons contact (hero + footer) */
+.btn-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-m);
+}
+
+/*
+ *
+ * FOOTER
+ *
+ */
+
+footer {
+    border-top: 1px solid var(--accent);
+    margin-top: var(--space-m);
+    padding: var(--space-s);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-m);
+    text-align: center;
+}
+
+.footer-name {
+    font-size: var(--fs-lg); 
+    font-weight: 700;
+}
+
+.footer-subtitle,
+.footer-copy {
+    color: var(--text-muted);
+    font-size: var(--fs-sm);
+}
+
+.footer-copy {
+    margin-top: var(--space-s);
+}
+
+/* TABLETTE + PC */
+@media (min-width: 768px) {
+    /* Menu Hamburger caché */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Menu navigation */
+    #nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        padding: 0;
+        border: none;
+    }
+    
+    .btn-contact {
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
+
+/* TABLETTE */
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    #nav-menu {
+        gap: var(--space-m);
+    }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    #nav-menu {
+        gap: var(--space-l);
+    }
+    #nav {
+        padding: var(--space-m);
+    }
+}
+
+/* Mobile (Small) */
+@media (max-width: 374.99px) {
+    .btn-contact {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,462 @@
+/*
+ *
+ * Mise en page (layout)
+ *
+ */
+
+.stats-grid,
+.skills-grid,
+.projects-grid {
+    display: grid;
+}
+
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-grid,
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-tag {
+    display: inline-block;
+}
+
+.timeline-date {
+    display: block;
+}
+
+#hero,
+.about-container,
+.stat-item,
+.skill-header,
+.project-card,
+.project-techs {
+    display: flex;
+}
+
+#hero,
+.about-container,
+.stat-item,
+.project-card {
+    flex-direction: column;
+}
+
+.project-techs {
+    flex-wrap: wrap;
+}
+
+#hero,
+.about-container,
+.stat-item,
+.skill-header {
+    align-items: center;
+}
+
+#hero {
+    justify-content: space-evenly;
+}
+
+.project-card.github-card {
+    justify-content: center;
+}
+
+.stat-item,
+.skill-header {
+    justify-content: space-between;
+}
+
+/* Texte */
+.about-text,
+.skills-grid,
+.projects-grid,
+.timeline {
+    text-align: left;
+}
+
+/*
+ *
+ * Typo
+ *
+ */
+
+.project-tag,
+.tech,
+.skill-level,
+.timeline-date {
+    font-size: var(--fs-sm);
+}
+
+.stat-plus {
+    font-size: var(--fs-xl);
+}
+
+.stat-number,
+.stat-symbol {
+    font-size: var(--fs-xxl);
+}
+
+/*
+ *
+ * Espacement
+ *
+ */
+
+/* Marge */
+#about,
+#stats,
+#skills,
+#projects,
+#timeline,
+.stats-grid,
+.github-card p {
+    margin: auto;
+}
+
+.project-techs {
+    margin-top: auto;
+}
+
+.timeline,
+.projects-grid {
+    margin-top: var(--space-m);
+}
+
+main section h2 {
+    margin-bottom: var(--space-s);
+}
+
+.skill-header,
+.timeline-date,
+.timeline-card h3 {
+    margin-bottom: var(--space-xs);
+}
+
+.timeline-item {
+    margin-bottom: var(--space-m);
+}
+
+/* Padding */
+.skill-card,
+.project-card,
+.timeline-card {
+    padding: var(--space-s);
+}
+
+.timeline-item {
+    padding-left: 50px;
+}
+
+.project-tag,
+.tech {
+    padding : 0.2rem 0.5rem;
+}
+
+/* Gap */
+
+.project-techs {
+    gap: var(--space-xs);
+}
+
+.project-card,
+.projects-grid,
+.skills-grid,
+#hero {
+    gap: var(--space-s);
+}
+
+.about-container,
+.stats-grid {
+    gap: var(--space-m);
+}
+
+/* Hauteur de ligne */
+
+.stat-symbol,
+.stat-number {
+    line-height: 1;
+}
+
+.project-card p,
+.timeline-card p {
+    line-height: 1.6;
+}
+
+#about p {
+    line-height: 1.8;
+}
+
+/*
+ *
+ * Largeur maximale
+ *
+ */
+
+#projects,
+#about,
+.stats-grid,
+#skills
+ {
+    max-width: 900px;
+}
+
+#timeline {
+    max-width: 700px;
+}
+
+/*
+ *
+ * Bordures
+ *
+ */
+
+.en-cours,
+.tech,
+.skill-bar,
+.skill-card,
+.project-card,
+.project-tag,
+.timeline-card {
+    border: 1px solid;
+}
+
+/* Angle bordures */
+
+.skill-bar {
+    border-radius: 3px;
+}
+
+.skill-card,
+.project-card,
+.timeline-card {
+    border-radius: 12px;
+}
+
+.en-cours,
+.tech {
+    border-radius: 25% 0 25% 0;
+}
+
+/*
+ *
+ * Couleurs
+ *
+ */
+
+.skill-card,
+.project-card,
+.timeline-card,
+.en-cours,
+.tech {
+    background-color: var(--bg-card);
+}
+
+.timeline-dot,
+.timeline::before,
+.skill-bar {
+    background-color: var(--text-muted);
+}
+
+.timeline-dot.active,
+.skill-fill {
+    background-color: var(--accent);
+}
+
+.en-cours,
+.tech,
+.stat-symbol,
+.highlight,
+.timeline-date {
+    color: var(--accent);
+}
+
+#about p,
+#hero h2,
+.stat-number,
+.stat-plus,
+.stat-label,
+.project-card p,
+.skill-level,
+.timeline-card p {
+    color: var(--text-muted);
+}
+
+.timeline-card.active,
+.timeline-dot.active,
+.skill-card:hover,
+.project-card:hover,
+.timeline-card:hover {
+    border-color: var(--accent);
+}
+
+.en-cours,
+.tech {
+    border-color: var(--text);
+}
+
+/*
+ *
+ * GRAS
+ *
+ */
+ 
+#hero h1,
+.stat-number,
+.stat-plus {
+    font-weight: 700;
+}
+
+.skill-name,
+.timeline-date {
+    font-weight: 600;
+}
+
+#hero h2 {
+    font-weight: 400;
+}
+
+/*
+ *
+ * POSITION
+ *
+ */
+
+.timeline,
+.timeline-item {
+    position: relative;
+}
+
+.timeline::before,
+.timeline-dot {
+    position: absolute;
+}
+
+/*
+ *
+ * HERO
+ *
+ */
+
+#hero {
+    min-height: 100dvh;
+}
+
+/*
+ *
+ * À PROPOS
+ *
+ */
+
+.about-image img {
+    width: 160px;
+    max-width: 100%;
+    border-radius: 0 0 50% 25%;
+}
+
+/*
+ *
+ * SKILLS 
+ * 
+ */
+
+/* La barre de progression */
+.skill-bar {
+    height: 6px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: var(--fill);
+    transition: width 1s ease;
+}
+
+/*
+ *
+ ************* TIMELINE
+ *
+ */
+
+/* La ligne verticale */
+.timeline::before {
+    content: '';
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+/* Le point sur la ligne */
+.timeline-dot {
+    left: 8px;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #444;
+    border-radius: 50%;
+}
+
+.timeline-dot.active {
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/*
+ *
+ * RESPONSIVE
+ *
+ */
+
+/* TABLETTE + PC */
+@media (min-width: 768px) {
+    .skill-card,
+    .project-card,
+    .timeline-card {
+        padding: var(--space-m);
+    }
+
+    section {
+        padding: var(--space-l) var(--space-m);
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .about-text {
+        flex: 2;
+        text-align: left;
+    }
+
+    .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile ( S ) */
+@media (max-width: 374.99px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}

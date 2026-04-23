@@ -36,6 +36,11 @@ Ce portfolio à pour objectif de m'aider à trouver une entreprise qui me fera c
     - gestion mode éco (localStorage)
 
 ## Mode éco
+Le mode éco de mon portfolio a été mis en place dans un objectif d’apprentissage et d’expérimentation autour de l’écoconception web. Il permet d’illustrer visuellement les différences entre une version optimisée et non optimisée.
+
+Cependant, toutes les ressources étant chargées dès le départ, ce mode n’a pas d’impact significatif sur l’empreinte carbone réelle du site.
+
+Dans un contexte réel, une approche éco-conçue consisterait à optimiser le site dès sa conception plutôt que de proposer un mode alternatif.
 
 ### Objectifs
 
@@ -66,7 +71,7 @@ Ce portfolio à pour objectif de m'aider à trouver une entreprise qui me fera c
 - > Interface minimaliste pour l'utilisateur.
 
 ## Piste d'améliorations
-- > Images en SVG plutôt qu'en WebP
+- > Images en SVG plutôt qu'en WebP (sauf celles où il y a beaucoup de variations de couleurs ex: cheveux, yeux, ...)
 - > Lazy loading images (si ajout de plusieurs images à l'avenir)
 - > Si plusieurs images à l'avenir, les regrouper avec la même classe. (il faudra modifier le JS en conséquence)
 - > Trouver une couleur qui pourrait être "plus" idéale pour la variable (--accent) dont le ratio doit être de 7 minimum.
@@ -75,13 +80,36 @@ Ce portfolio à pour objectif de m'aider à trouver une entreprise qui me fera c
 
 - > Voir l'espacement sur tous les formats
 - > Refaire un check-up en responsive
-- > Mettre les liens vers le projet
 - > Déployer le portfolio
 
 ## Notes
 
 ### Notes Techniques :
 
+- > Choix de langages :
+    - HTML :
+        - Améliore l'accessibilité
+        - Réduire le JS
+    - CSS :
+        - Meilleur contrôle des performances
+        - Réduction du poids global du site
+        - Mise en place de variables CSS pour : typographie / espacements / couleurs
+        - Utilisation de clamp() pour un design responsive sans multiplier les media queries
+    - JS :
+        - Interaction utilisateur (menu burger)
+        - Mode éco (désactivation des animations)
+        - Animation contrôlée (stats uniquement hors mode éco)
+        
+        ___
+        #### A savoir : J'ai utilisé du JS pour m'entraîner sur le langage mais j'ai conscience que son utilisation alourdi le code et génère des allers-retours énergivores.
+        ___
+
+- > Démarche éco-conception :
+    - Limitation du JavaScript au strict nécessaire
+    - Réduction du DOM
+    - Désactivation des animations en mode éco
+    - Utilisation de polices système ou légères
+    - Structure simple
 - > Choix volontaire de ma part de ne pas factoriser le contenu du fichier 'communs.css'
 
 ### Sources d'aides :

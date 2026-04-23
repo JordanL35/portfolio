@@ -18,7 +18,7 @@ Ce portfolio à pour objectif de m'aider à trouver une entreprise qui me fera c
 - > UI simple et lisible (priorités users)
 - > Montrer mes compétences
 - > Avoir un Mode éco
-- > Avoir Code propre et maintenable
+- > Avoir un code propre et maintenable
 
 ### Structure du projet
 
@@ -27,15 +27,16 @@ Ce portfolio à pour objectif de m'aider à trouver une entreprise qui me fera c
     - Navigation simple (ancres)
     - Sémantique respectée
 - > CSS
-    - communs.css → base + variables
-    - sections.css → layout des sections
-    - mode-eco.css → optimisation
+    - communs.css : base + variables
+    - sections.css : layout des sections
+    - mode-eco.css : optimisation
 - > JS
     - menu mobile
     - animation stats
     - gestion mode éco (localStorage)
 
 ## Mode éco
+
 Le mode éco de mon portfolio a été mis en place dans un objectif d’apprentissage et d’expérimentation autour de l’écoconception web. Il permet d’illustrer visuellement les différences entre une version optimisée et non optimisée.
 
 Cependant, toutes les ressources étant chargées dès le départ, ce mode n’a pas d’impact significatif sur l’empreinte carbone réelle du site.
@@ -62,7 +63,6 @@ Dans un contexte réel, une approche éco-conçue consisterait à optimiser le s
     - --text: #F1CE94 : Beige agréable pour la lecture avec une teinte plus prononcée pour la différencier d'un simple texte.
     - --text-muted: #F1D7AB : Idem que la précédente avec une teinte plus claire.
     - --accent: #e97a47 : Pour forcer le regard sur des éléments importants.
-    
 - > Test de ratio avec [Contrast Finder](https://app.contrast-finder.org/) :
     - --bg: #1D3C45
     - --text: #F1CE94 (ratio : 7.84)
@@ -71,16 +71,11 @@ Dans un contexte réel, une approche éco-conçue consisterait à optimiser le s
 - > Interface minimaliste pour l'utilisateur.
 
 ## Piste d'améliorations
+
 - > Images en SVG plutôt qu'en WebP (sauf celles où il y a beaucoup de variations de couleurs ex: cheveux, yeux, ...)
 - > Lazy loading images (si ajout de plusieurs images à l'avenir)
 - > Si plusieurs images à l'avenir, les regrouper avec la même classe. (il faudra modifier le JS en conséquence)
 - > Trouver une couleur qui pourrait être "plus" idéale pour la variable (--accent) dont le ratio doit être de 7 minimum.
-
-
-
-- > Voir l'espacement sur tous les formats
-- > Refaire un check-up en responsive
-- > Déployer le portfolio
 
 ## Notes
 

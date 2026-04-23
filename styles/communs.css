@@ -15,14 +15,6 @@
     --fs-xxl: clamp(2rem, 5vw, 3rem);
 
     /* Espacements */
-    /* --space-xs: 0.5rem;
-    --space-s: 1rem;
-    --space-m: 2rem;
-    --space-l: 4rem;
-    --space-fluid-s: clamp(1rem, 3vw, 2rem);
-    --space-fluid-m: clamp(2rem, 5vw, 4rem);
-    --space-fluid-l: clamp(3rem, 8vw, 6rem); */
-
 
     /* Espacements fixes */
     --space-xs: 0.5rem;

@@ -424,6 +424,10 @@ main section h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .projects-grid .project-card:last-child {
+        grid-column: 1 / -1;
+    }
+
     .about-container {
         flex-direction: row;
         align-items: center;

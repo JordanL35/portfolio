@@ -194,6 +194,13 @@ nav ul a:hover {
     gap: var(--space-m);
 }
 
+/* Bouton dans les cartes "Projets" */
+.project-card .btn {
+    display: inline-flex;
+    width: fit-content;
+    margin: 1rem auto 0;
+}
+
 /*
  *
  * FOOTER
